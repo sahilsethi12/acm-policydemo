@@ -64,8 +64,7 @@ spec:
                 namespace: stackrox
                 name: stackrox-secured-cluster-services
               spec:
-                clusterName: |
-                  {{ fromSecret "open-cluster-management-agent" "hub-kubeconfig-secret" "cluster-name" | base64dec }}
+                clusterName: central-stackrox.apps.cluster-ef15.ef15.example.opentlc.com:443
                 auditLogs:
                   collection: Auto
                 centralEndpoint: |
