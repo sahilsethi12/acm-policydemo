@@ -113,8 +113,8 @@ spec:
       type: ManagedClusterConditionAvailable
   clusterSelector:
     matchExpressions:
-      - key: env
+      - key: vendor
         operator: In
         values:
-          - dev
+          - OpenShift
 
